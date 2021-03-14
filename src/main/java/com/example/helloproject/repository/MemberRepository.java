@@ -10,6 +10,7 @@ public interface MemberRepository {
     Optional<Member> findById(Long id);
     Optional<Member> findByName(String name);
     List<Member> findAll();
+    void clearStore();
     // Optional?
     // JAVA8에 추가된 내용.
     // 기존에는 null이 반환되지만 현재에는 Optional로 한번 감싸서 반환하는것을 선호하는 편임
